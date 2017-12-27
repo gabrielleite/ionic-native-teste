@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item no-lines>
+    <div class="avatar-wrapper">
+      <ion-avatar>
+        <img [src]="avatar">
+      </ion-avatar>
+
+      <button (click)="tiraFoto()" class="btn-tirar-foto" ion-button icon-only round>
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </div>
+  </ion-item>
+
+  <ion-card>
+
+    <ion-item>
+        <ion-icon name="contact" item-left></ion-icon>
+        Gabriel Leite
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="calendar" item-left></ion-icon>
+      <p>01/01/1990</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="at" item-left></ion-icon>
+      <p>gabriel.leite@email.com.br</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call" item-left></ion-icon>
+      2112345678
+    </ion-item>
+  </ion-card>
+</ion-content>
